@@ -1,27 +1,21 @@
-# GuardsExercise
+ You will create 3 pages:
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.3.
+     Home page (accessible to everyone)
+     Dashboard page (accessible by user and admin)
+     Admin page (accessible by admins only)
 
-## Development server
+2 guards:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+     isConnected
+     isAdmin
 
-## Code scaffolding
+A user service:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+     a private property 'role' which will take the value 'ANONYMOUS', 'USER' or 'ADMIN'
+     a method to return the ‘role’.
 
-## Build
+You will have to think about the conditions to put in your guards to validate the rules of access to the pages.
+Validation criteria ✅
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+     All files have been created successfully
+     Navigation rules are correctly implemented for each role
